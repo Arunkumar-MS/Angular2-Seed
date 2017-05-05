@@ -1,0 +1,33 @@
+{
+  "name": "prolegis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "postinstall": "typings install"
+  },
+  "dependencies": {
+    "@angular/common": "^2.3.1",
+    "@angular/compiler": "^2.3.1",
+    "@angular/core": "^2.3.1",
+    "@angular/forms": "^2.3.1",
+    "@angular/http": "^2.3.1",
+    "@angular/platform-browser": "^2.3.1",
+    "@angular/platform-browser-dynamic": "^2.3.1",
+    "@angular/router": "^3.3.1",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.0.1",
+    "ts-helpers": "^1.1.1",
+    "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "ts-loader": "^2.0.3",
+    "typescript": "~2.0.3",
+    "typings": "^2.1.1",
+    "webpack": "^2.5.0"
+  },
+  "author": "nimish",
+  "license": "ISC"
+}
