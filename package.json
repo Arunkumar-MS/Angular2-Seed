@@ -35,7 +35,7 @@
     "zone.js": "^0.7.2"
   },
   "devDependencies": {
-    "@types/core-js": "^0.9.41",
+    "@types/node": "^7.0.18",
     "ts-loader": "^2.0.3",
     "typescript": "~2.0.3",
     "typings": "^2.1.1",

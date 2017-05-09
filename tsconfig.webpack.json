@@ -20,6 +20,12 @@
     "compiled",
     "src/server.ts"
   ],
+  "typeRoots": [
+    "node_modules/@types"
+  ],
+  "types": [
+    "node"
+  ]
   "awesomeTypescriptLoaderOptions": {
     "useWebpackText": true,
     "forkChecker": true,
