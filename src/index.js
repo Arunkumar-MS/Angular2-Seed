@@ -67441,16 +67441,13 @@ app.use(bodyParser.json());
 app.use(compression());
 function cacheControl(req, res, next) {
     // instruct browser to revalidate in 60 seconds
-    console.log(req);
-    console.log(path.join(ROOT, 'dist/client'));
     res.header('Cache-Control', 'max-age=60');
     next();
 }
 // Serve static files
 app.use('/assets', cacheControl, express.static(path.join(__dirname, 'assets'), { maxAge: 30 }));
-app.use(cacheControl, express.static('/Users/arunkumar/Documents/learning/mainPro/Angular2-Seed/dist/client', { index: false })); // need to fix it
+app.use(cacheControl, express.static(path.join(ROOT, 'dist/client'), { index: false }));
 function ngApp(req, res) {
-    console.log(res.render);
     res.render('index', {
         req: req,
         res: res,

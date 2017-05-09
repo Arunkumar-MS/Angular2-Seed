@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack  --progress",
+    "start": "nodemon src/index",
     "postinstall": "typings install"
   },
   "dependencies": {
