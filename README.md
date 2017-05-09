@@ -1,3 +1,6 @@
 # Angular2-Seed
-npm install
-npm run build
+<i>
+npm i <br/>
+npm run build <br />
+npm run start 
+</i>
