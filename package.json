@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack  --progress",
-    "start": "nodemon src/index",
+    "start": "open http://localhost:4000 && nodemon src/index",
     "postinstall": "typings install"
   },
   "dependencies": {
