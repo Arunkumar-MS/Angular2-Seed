@@ -11,7 +11,7 @@ interface AppState {
   selector : 'my-app',
   template: `
 		<button (click)="increment()">Increment</button>
-		<div>Current Count: {{ counter }}</div>
+		<div>Current Count: {{ counter | async}}</div>
 		<button (click)="decrement()">Decrement</button>
 
 		<button (click)="reset()">Reset Counter</button>
