@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
 import { rootReducer } from './reducers';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { CounterActions } from './actions/counterActions';
 
 @NgModule({
     imports: [
@@ -14,6 +15,9 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
       StoreDevtoolsModule.instrumentOnlyWithExtension({
         maxAge: 10
       })
+    ],
+    providers: [
+      CounterActions
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent]
