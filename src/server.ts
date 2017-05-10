@@ -6,7 +6,7 @@ import * as bodyParser from 'body-parser';
 import * as cookieParser from 'cookie-parser';
 import * as compression from 'compression';
 import { createEngine } from 'angular2-express-engine';
-import { MainModule } from './node.module';
+import { ServerAppModule } from './server.app.module';
 import 'ts-helpers';
 const app = express();
 const ROOT = path.join(path.resolve(__dirname, '..'));
@@ -15,7 +15,7 @@ const ROOT = path.join(path.resolve(__dirname, '..'));
 app.set('port', process.env.PORT || 4000);
 //app.set('views', ROOT, 'dist/client'));
 
-app.engine('.html', createEngine({ ngModule: MainModule }));
+app.engine('.html', createEngine({ ngModule: ServerAppModule }));
 app.set('view engine', 'html');
 
 app.use(cookieParser('Angular 2 Universal'));
