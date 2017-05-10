@@ -1,0 +1,19 @@
+{
+  "research": [
+    {
+      "id": 1,
+      "name": "Research 1",
+      "description": "This is a description"
+    },
+    {
+      "id": 2,
+      "name": "Research 2",
+      "description": "This is a description!"
+    },
+    {
+      "id": 3,
+      "name": "Research 3",
+      "description": "This is a lovely item"
+    }
+  ]
+}

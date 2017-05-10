@@ -2,5 +2,10 @@
 <i>
 npm i <br/>
 npm run build <br />
-npm run start 
+npm run start
 </i>
+
+# Mock API
+npm run server
+
+It runs on 3000 port
