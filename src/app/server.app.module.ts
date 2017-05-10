@@ -5,11 +5,15 @@ import { UniversalModule } from 'angular2-universal/node';
 import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
 import { rootReducer } from './reducers';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 @NgModule({
     imports: [
       UniversalModule,
-      StoreModule.provideStore(rootReducer)
+      StoreModule.provideStore(rootReducer),
+      StoreDevtoolsModule.instrumentOnlyWithExtension({
+        maxAge: 10
+      })
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent]
