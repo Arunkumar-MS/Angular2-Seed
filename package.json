@@ -6,20 +6,21 @@
   "scripts": {
     "build": "webpack  --progress",
     "start": "open http://localhost:4000 && nodemon src/index",
+    "server": "json-server --watch server/api/db.json",
     "postinstall": "typings install"
   },
   "dependencies": {
-    "@angular/common": "^2.3.1",
-    "@angular/compiler": "^2.3.1",
-    "@angular/compiler-cli": "^2.3.1",
-    "@angular/core": "^2.3.1",
-    "@angular/forms": "^2.3.1",
-    "@angular/http": "^2.3.1",
-    "@angular/platform-browser": "^2.3.1",
-    "@angular/platform-browser-dynamic": "^2.3.1",
-    "@angular/platform-server": "^2.3.1",
+    "@angular/common": "^2.4.10",
+    "@angular/compiler": "^2.4.10",
+    "@angular/compiler-cli": "^2.4.10",
+    "@angular/core": "^2.4.10",
+    "@angular/forms": "^2.4.10",
+    "@angular/http": "^2.4.10",
+    "@angular/platform-browser": "^2.4.10",
+    "@angular/platform-browser-dynamic": "^2.4.10",
+    "@angular/platform-server": "^2.4.10",
     "@angular/router": "~3.1.2",
-    "@angular/upgrade": "^2.3.1",
+    "@angular/upgrade": "^2.4.10",
     "@angularclass/bootloader": "~1.0.1",
     "@angularclass/idle-preload": "~1.0.4",
     "@ngrx/core": "^1.2.0",
@@ -39,7 +40,8 @@
     "preboot": "~4.5.2",
     "rxjs": "5.0.0-beta.12",
     "webfontloader": "^1.6.26",
-    "zone.js": "~0.8.10"
+    "zone.js": "~0.8.10",
+    "json-server": "^0.9.6"
   },
   "devDependencies": {
     "@types/morgan": "^1.7.32",
