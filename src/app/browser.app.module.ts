@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
 import { rootReducer } from './reducers';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { CounterActions } from './actions/counterActions';
+import { APP_PROVIDERS } from './app.providers';
 
 @NgModule({
     imports: [
@@ -16,9 +16,7 @@ import { CounterActions } from './actions/counterActions';
         maxAge: 10
       })
     ],
-    providers: [
-      CounterActions
-    ],
+    providers: APP_PROVIDERS,
     declarations: [AppComponent],
     bootstrap: [AppComponent]
 
