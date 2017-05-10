@@ -7,7 +7,6 @@ import * as cookieParser from 'cookie-parser';
 import * as compression from 'compression';
 import { createEngine } from 'angular2-express-engine';
 import { ServerAppModule } from './app/server.app.module';
-import 'ts-helpers';
 const app = express();
 const ROOT = path.join(path.resolve(__dirname, '..'));
 
@@ -51,7 +50,6 @@ app.get('*', function(req, res) {
   res.status(404).send(json);
 });
 
-// Server
 let server = app.listen(app.get('port'), () => {
   console.log(`Listening on: http://localhost:${server.address().port}`);
 });
