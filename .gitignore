@@ -1,3 +1,7 @@
 node_modules/
 dist/
-typings/
+client.js
+client.js.*
+main.bundle.*.*
+index.js
+index.js.map
