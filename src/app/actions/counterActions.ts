@@ -9,14 +9,14 @@ export class CounterActions {
   constructor(private store: Store<any>) { }
 
   increment() {
-		this.store.dispatch({ type: INCREMENT });
-	}
+    this.store.dispatch({ type: INCREMENT });
+  }
 
-	decrement() {
-		this.store.dispatch({ type: DECREMENT });
-	}
+  decrement() {
+    this.store.dispatch({ type: DECREMENT });
+  }
 
-	reset() {
-		this.store.dispatch({ type: RESET });
-	}
+  reset() {
+    this.store.dispatch({ type: RESET });
+  }
 }
