@@ -6,7 +6,7 @@ import * as bodyParser from 'body-parser';
 import * as cookieParser from 'cookie-parser';
 import * as compression from 'compression';
 import { createEngine } from 'angular2-express-engine';
-import { ServerAppModule } from './server.app.module';
+import { ServerAppModule } from './app/server.app.module';
 import 'ts-helpers';
 const app = express();
 const ROOT = path.join(path.resolve(__dirname, '..'));
