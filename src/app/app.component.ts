@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { CounterActions } from './actions/counterActions'
+import { CounterActions } from './actions/counterActions';
 import { Store } from '@ngrx/store';
 @Component({
     selector: 'my-app',
@@ -13,24 +13,23 @@ import { Store } from '@ngrx/store';
 })
 
 export class AppComponent {
-    counter: Observable<number>;
+  counter: Observable<number>;
+  constructor(
+    private store: Store<any>,
+    private counterActions: CounterActions
+  ) {
+    this.counter = store.select('counter');
+  }
 
-    constructor(
-        private store: Store<any>,
-        private counterActions: CounterActions
-    ) {
-        this.counter = store.select('counter');
-    }
+  increment() {
+    this.counterActions.increment();
+  }
 
-    increment() {
-        this.counterActions.increment();
-    }
+  decrement() {
+    this.counterActions.decrement();
+  }
 
-    decrement() {
-        this.counterActions.decrement();
-    }
-
-    reset() {
-        this.counterActions.reset();
-    }
+  reset() {
+    this.counterActions.reset();
+  }
 }
