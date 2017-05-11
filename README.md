@@ -1,5 +1,6 @@
 # Angular2-Seed
 <i>
+npm i -g typings <br/>
 npm i <br/>
 npm run build <br />
 npm run start
